@@ -29,9 +29,9 @@ footer {
     text-align: center;
 }
 #image1 {
-    /* width: 50%; */
-    /* height: 10; */
-    border: 5px, solid #4bce40;
+    border: 5px;
+    border-color:black;
+    border-style: solid;
 }
 #image2 {
     width: 100%;
