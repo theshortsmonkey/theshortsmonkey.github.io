@@ -4,40 +4,40 @@ body {
     font-family:'Tektur', sans-serif;
     text-align: center;
 }
-.item1 {
+.main-header {
     grid-area: header
 }
-.item2 {
+.main-picText {
     grid-area: picText
 }
-.item3 {
+.main-pic1 {
     grid-area: pic1
 }
-.item4 {
+.main-pic2 {
     grid-area: pic2
 }
-.item5 {
+.main-pic3 {
     grid-area: pic3
 }
-.item6 {
+.main-pic4 {
     grid-area: pic4
 }
-.item7 {
+.main-pic5 {
     grid-area: pic5
 }
-.item8 {
+.main-bestBits {
     grid-area: bestBits
 }
-.item9 {
+.main-breedQs {
     grid-area: breedQs
 }
 .main-container{
     display: grid;
     grid-template-areas: 'header header'
-    'picText pic5'
+    'picText pic1'
     'bestBits breedQs'
-    'pic1 pic2'
-    'pic3 pic4'
+    'pic2 pic3'
+    'pic4 pic5'
 }
 h1 {
     color: red;
@@ -48,10 +48,11 @@ h2 {
 h3 {
     color:brown;
     text-align: left;
+    padding-left: 2%;
 }
 p {
-    padding: 2%;
-    padding-top: 0%;
+    padding: 5%;
+    padding-top: 10%;
 }
 a {
     font-size: large;
@@ -71,12 +72,13 @@ ul {
     border-color:black;
     border-style: solid;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    width: 97.5%;
+    height: 95%;
 }
 #image-round {
     border-radius: 50%;
+    width: 95%;
+    height: 95%;
 }
 footer {
     text-align: center;
