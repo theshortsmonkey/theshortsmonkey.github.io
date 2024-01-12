@@ -1,5 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
 body {
-    background-color: powderblue;
+    background-color:cornsilk;
+    font-family:'Tektur', sans-serif;
+    text-align: center;
+}
+.item1 {
+    grid-area: header
+}
+.item2 {
+    grid-area: picText
+}
+.item3 {
+    grid-area: pic1
+}
+.item4 {
+    grid-area: pic2
+}
+.item5 {
+    grid-area: pic3
+}
+.item6 {
+    grid-area: pic4
+}
+.item7 {
+    grid-area: pic5
+}
+.item8 {
+    grid-area: bestBits
+}
+.item9 {
+    grid-area: breedQs
+}
+.main-container{
+    display: grid;
+    grid-template-areas: 'header header'
+    'picText pic5'
+    'bestBits breedQs'
+    'pic1 pic2'
+    'pic3 pic4'
 }
 h1 {
     color: red;
@@ -8,7 +46,8 @@ h2 {
     color: green;
 }
 h3 {
-    color:darkorange;
+    color:brown;
+    text-align: left;
 }
 p {
     padding: 2%;
@@ -20,20 +59,30 @@ a {
 ol {
     color: blueviolet;
     margin-left:5%;
+    text-align: left;
 }
 ul {
-    color:hotpink;
+    color:maroon;
     margin-left:10%;
+    text-align: left;
+}
+.image1 {
+    border: 5px;
+    border-color:black;
+    border-style: solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+#image-round {
+    border-radius: 50%;
 }
 footer {
     text-align: center;
 }
-#image1 {
-    border: 5px;
-    border-color:black;
-    border-style: solid;
-}
-#image2 {
-    width: 100%;
-    border-radius: 50%;
+.footer-container {
+    display: inline-grid;
+    grid-template-columns: auto;
+    align-content: center;
 }
