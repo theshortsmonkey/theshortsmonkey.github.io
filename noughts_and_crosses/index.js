@@ -1,9 +1,12 @@
 const squares = [...document.getElementsByClassName("square")];
 const currentPlayerIs = document.getElementById("current-player");
 const winner = document.getElementById("winning-player");
-const scoreList = document.getElementsByTagName("li");
 const playerOneName = document.getElementById("p1name");
 const playerTwoName = document.getElementById("p2name");
+const playerOneSymbol = document.getElementById("p1symbol");
+const playerTwoSymbol = document.getElementById("p2symbol");
+const playerOneScore = document.getElementById("p1score");
+const playerTwoScore = document.getElementById("p2score");
 const playerOne = { icon: "X", name: 'Player 1', score: 0, id: 0 };
 const playerTwo = { icon: "O", name: 'Player 2', score: 0, id: 1 };
 let currentPlayer = playerOne;
@@ -21,7 +24,6 @@ playerOneName.addEventListener("input", (e) => {
   } else {
     playerOne.name = 'Player 1'
   }
-  scoreList[0].textContent = `${playerOne.name}'s Score: ${playerOne.score}`;
   if(currentPlayer === playerOne) {
     currentPlayerIs.textContent = `Current player is: ${playerOne.name}`;
   }
@@ -35,7 +37,7 @@ playerTwoName.addEventListener("input", (e) => {
   } else {
     playerOne.name = 'Player 2'
   }
-  scoreList[1].textContent = `${playerTwo.name}'s Score: ${playerTwo.score}`;if(currentPlayer === playerTwo) {
+  if(currentPlayer === playerTwo) {
     currentPlayerIs.textContent = `Current player is: ${playerTwo.name}`;
   }
 })
@@ -75,9 +77,8 @@ const checkWinCombinations = () => {
       ) {
         currentPlayerIs.textContent = `${currentPlayer.name} wins!`;
         currentPlayer.score++;
-        scoreList[
-          currentPlayer.id
-        ].textContent = `${currentPlayer.name}'s Score: ${currentPlayer.score}`;
+        playerOneScore.textContent = `Score: ${playerOne.score}`;
+        playerTwoScore.textContent = `Score: ${playerTwo.score}`;
         hasWon = true;
       }
     }

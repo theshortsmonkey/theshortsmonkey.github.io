@@ -10,8 +10,9 @@
   <body>
     <h1 class="main-header">Noughts and Crosses</h1>
     <section id="player-details">
-      <div>
-        <p class="player-details-text">Player 1 Name</p>
+      <div class="single-player">
+        <p class="player-details-text">Player 1</p>
+        <label for="p1name">Name</label>
         <input
           type="text"
           class="player-details-text"
@@ -19,9 +20,12 @@
           name="p1name"
           autocomplete="off"
         />
+        <p id="p1symbol">Symbol: X</p>
+        <p id="p1score">Score: 0</p>
       </div>
-      <div>
-        <p class="player-details-text">Player 2 Name</p>
+      <div class="single-player">
+        <p class="player-details-text">Player 2</p>
+        <label for="p2name">Name</label>
         <input
           type="text"
           class="player-details-text"
@@ -29,16 +33,12 @@
           name="p2name"
           autocomplete="off"
         />
+        <p id="p2symbol">Symbol: O</p>
+        <p id="p2score">Score: 0</p>
       </div>
     </section>
-    <section id="stats">
-      <div id="current-player">Current player is: Player 1</div>
-      <div id="scoreboard">
-        <ul>
-          <li>Player 1 score: 0</li>
-          <li>Player 2 score: 0</li>
-        </ul>
-      </div>
+    <section id="current-player-section">
+      <p id="current-player">Current player is: Player 1</p>
     </section>
     <section id="view-board">
       <div id="playing-board">

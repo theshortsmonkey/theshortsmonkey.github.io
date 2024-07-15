@@ -26,8 +26,6 @@ section {
   width: 90vw;
   min-width: 300px;
   max-width: calc(100vh - 2em);
-  border: 12px solid white;
-  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,12 +40,20 @@ button {
   border-radius: 12px;
 }
 #player-details {
-  /* display: flex; */
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.player-details-text {
-  margin: 1em;
+.single-player {
+  border: 5px solid white;
+  border-radius: 5px;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+#current-player-section {
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 80%;
 }
 #current-player{
   font-size: 30px;
@@ -64,6 +70,8 @@ button {
   max-height: calc(100vh - 50px);
   overflow: hidden;
   margin: 2em;
+  border: 12px solid white;
+  border-radius: 12px;
 }
 #overlay {
   display: grid;
