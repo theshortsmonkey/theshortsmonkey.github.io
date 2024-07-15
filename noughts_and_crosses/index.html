@@ -10,10 +10,26 @@
   <body>
     <h1 class="main-header">Noughts and Crosses</h1>
     <section id="player-details">
-      <p>Player 1 Name </p>
-      <input type="text" id="p1name" name="p1name" autocomplete="off"/>
-      <p>Player 2 Name </p>
-      <input type="text" id="p2name" name="p2name" autocomplete="off"/>
+      <div>
+        <p class="player-details-text">Player 1 Name</p>
+        <input
+          type="text"
+          class="player-details-text"
+          id="p1name"
+          name="p1name"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <p class="player-details-text">Player 2 Name</p>
+        <input
+          type="text"
+          class="player-details-text"
+          id="p2name"
+          name="p2name"
+          autocomplete="off"
+        />
+      </div>
     </section>
     <section id="stats">
       <div id="current-player">Current player is: Player 1</div>
@@ -24,7 +40,6 @@
         </ul>
       </div>
     </section>
-    <p></p>
     <section id="view-board">
       <div id="playing-board">
         <div id="overlay">
@@ -40,7 +55,6 @@
         </div>
       </div>
     </section>
-    <p></p>
     <div id="reset-button">
       <button id="play-again-button" onclick="resetBoard()">Play Again</button>
     </div>

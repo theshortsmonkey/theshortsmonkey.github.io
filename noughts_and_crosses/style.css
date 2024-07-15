@@ -2,6 +2,7 @@
   background-color: black;
   color: white;
   font-family: fantasy;
+  text-align: center;
 }
 .main-header {
   color: white;
@@ -39,6 +40,14 @@ button {
   border: 12px solid white;
   border-radius: 12px;
 }
+#player-details {
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.player-details-text {
+  margin: 1em;
+}
 #current-player{
   font-size: 30px;
 }
@@ -55,6 +64,7 @@ button {
   overflow: hidden;
   border: 12px solid white;
   border-radius: 12px;
+  margin: 2em;
 }
 #overlay {
   display: grid;
@@ -70,7 +80,7 @@ button {
   z-index: 50;
   background: none;
   box-shadow: inset 5px 5px 0 rgba(255, 255, 255, 0.05), inset -5px -5px 0 white;
-  font-size:150px;
+  font-size: 20vw;
   display: flex;
   justify-content: center;
   align-items: center;
