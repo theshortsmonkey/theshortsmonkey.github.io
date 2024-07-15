@@ -9,6 +9,7 @@ const playerTwo = { icon: "O", name: 'Player 2', score: 0, id: 1 };
 let currentPlayer = playerOne;
 let startPlayer = playerOne
 let hasWon = false;
+let playCount = 0;
 
 playerOneName.addEventListener("input", (e) => {
   console.log(e)
@@ -44,7 +45,7 @@ squares.forEach((square, index) => {
     if (!square.textContent && !hasWon) {
       square.textContent = currentPlayer.icon;
       checkWinCombinations();
-      if (!hasWon) {
+      if (!hasWon && playCount < 8) {
         changePlayer();
       }
     }
@@ -81,6 +82,11 @@ const checkWinCombinations = () => {
       }
     }
   });
+  console.log(playCount,hasWon)
+  if (!hasWon && playCount === 8) {
+    console.log('in if')
+    currentPlayerIs.textContent = 'That was a draw, keep trying, someone will win eventually!';
+  }
 };
 
 const changePlayer = () => {
@@ -90,6 +96,7 @@ const changePlayer = () => {
     currentPlayer = playerTwo;
   }
   currentPlayerIs.textContent = `Current player is: ${currentPlayer.name}`;
+  playCount++;
 };
 
 const resetBoard = () => {
@@ -105,4 +112,5 @@ const resetBoard = () => {
   currentPlayer = startPlayer
   currentPlayerIs.textContent = `Current player is: ${currentPlayer.name}`;
   hasWon = false;
+  playCount = 0;
 };
