@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+body {
+    background-color:cornsilk;
+    font-family:'Tektur', sans-serif;
+    text-align: center;
+}
+.main-header {
+    grid-area: header
+}
+.main-picText {
+    grid-area: picText
+}
+.main-pic1 {
+    grid-area: pic1
+}
+.main-pic2 {
+    grid-area: pic2
+}
+.main-pic3 {
+    grid-area: pic3
+}
+.main-pic4 {
+    grid-area: pic4
+}
+.main-pic5 {
+    grid-area: pic5
+}
+.main-bestBits {
+    grid-area: bestBits
+}
+.main-breedQs {
+    grid-area: breedQs
+}
+.main-container{
+    display: grid;
+    grid-template-areas: 'header header'
+    'picText pic1'
+    'bestBits breedQs'
+    'pic2 pic3'
+    'pic4 pic5'
+}
+h1 {
+    color: red;
+}
+h2 {
+    color: green;
+}
+h3 {
+    color:brown;
+    text-align: left;
+    padding-left: 2%;
+}
+p {
+    padding: 5%;
+    padding-top: 10%;
+}
+a {
+    font-size: large;
+}
+ol {
+    color: blueviolet;
+    margin-left:5%;
+    text-align: left;
+}
+ul {
+    color:maroon;
+    margin-left:10%;
+    text-align: left;
+}
+.image1 {
+    border: 5px;
+    border-color:black;
+    border-style: solid;
+    display: block;
+    width: 97.5%;
+    height: 95%;
+}
+#image-round {
+    border-radius: 50%;
+    width: 95%;
+}
+footer {
+    text-align: center;
+}
+.footer-container {
+    display: inline-grid;
+    grid-template-columns: auto;
+    align-content: center;
+}

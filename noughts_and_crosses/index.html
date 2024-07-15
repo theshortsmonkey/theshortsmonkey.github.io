@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noughts and Crosses</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1 class="main-header">Noughts and Crosses</h1>
+    <section id="player-details">
+      <p>Player 1 Name </p>
+      <input type="text" id="p1name" name="p1name" autocomplete="off"/>
+      <p>Player 2 Name </p>
+      <input type="text" id="p2name" name="p2name" autocomplete="off"/>
+    </section>
+    <section id="stats">
+      <div id="current-player">Current player is: Player 1</div>
+      <div id="scoreboard">
+        <ul>
+          <li>Player 1 score: 0</li>
+          <li>Player 2 score: 0</li>
+        </ul>
+      </div>
+    </section>
+    <p></p>
+    <section id="view-board">
+      <div id="playing-board">
+        <div id="overlay">
+          <span id="s1" class="square"></span>
+          <span id="s2" class="square"></span>
+          <span id="s3" class="square"></span>
+          <span id="s4" class="square"></span>
+          <span id="s5" class="square"></span>
+          <span id="s6" class="square"></span>
+          <span id="s7" class="square"></span>
+          <span id="s8" class="square"></span>
+          <span id="s9" class="square"></span>
+        </div>
+      </div>
+    </section>
+    <p></p>
+    <div id="reset-button">
+      <button id="play-again-button" onclick="resetBoard()">Play Again</button>
+    </div>
+  </body>
+</html>
