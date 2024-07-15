@@ -25,7 +25,7 @@ playerOneName.addEventListener("input", (e) => {
     playerOne.name = 'Player 1'
   }
   if(currentPlayer === playerOne) {
-    currentPlayerIs.textContent = `Current player is: ${playerOne.name}`;
+    currentPlayerIs.textContent = `${playerOne.name}, place your ${playerOne.icon}`;
   }
 })
 playerTwoName.addEventListener("input", (e) => {
@@ -38,7 +38,7 @@ playerTwoName.addEventListener("input", (e) => {
     playerOne.name = 'Player 2'
   }
   if(currentPlayer === playerTwo) {
-    currentPlayerIs.textContent = `Current player is: ${playerTwo.name}`;
+    currentPlayerIs.textContent = `${playerTwo.name}, place your ${playerTwo.icon}`;
   }
 })
 
@@ -96,7 +96,7 @@ const changePlayer = () => {
   } else {
     currentPlayer = playerTwo;
   }
-  currentPlayerIs.textContent = `Current player is: ${currentPlayer.name}`;
+  currentPlayerIs.textContent = `${currentPlayer.name}, place your ${currentPlayer.icon}`;
   playCount++;
 };
 

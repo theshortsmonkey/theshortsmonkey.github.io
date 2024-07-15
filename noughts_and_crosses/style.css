@@ -4,10 +4,6 @@
   font-family: fantasy;
   text-align: center;
 }
-.main-header {
-  color: white;
-  font-size: 60px;
-}
 
 
 body {
@@ -20,6 +16,12 @@ body {
   width: 100vw;
   min-width: 300px;
   max-width: calc(100vh - 2em);
+}
+.main-header {
+  font-size: 60px;
+}
+h2 {
+  font-size: 25px;
 }
 section {
   font-size: larger;
@@ -50,6 +52,9 @@ button {
   margin: 0.5em;
   padding: 0.5em;
 }
+input {
+  width: 5rem;
+}
 #current-player-section {
   border: 5px solid white;
   border-radius: 5px;
@@ -57,7 +62,7 @@ button {
 }
 #current-player{
   font-size: 30px;
-  max-width: 50%;
+  max-width: 80%;
 }
 
 #view-board {
